@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header>
-      <Link to="/">Fast React Pizza</Link>
+      <Link to="/">Fast React Pizza Co.</Link>
 
-      <div>Hakeem</div>
+      <p>Hakeem</p>
     </header>
   );
 }
