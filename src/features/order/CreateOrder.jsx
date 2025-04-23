@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Form, redirect } from "react-router-dom";
 import { createOrder } from "../../services/apiRestaurant";
 
@@ -84,7 +83,6 @@ export async function action({ request }) {
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
   // console.log(data)
-
   const order = {
     ...data,
     cart: JSON.parse(data.cart),
