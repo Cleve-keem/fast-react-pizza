@@ -14,8 +14,10 @@ export default function SearchOrder() {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        className="bg-stone-50"
         type="text"
         value={query}
+        placeholder="Search order #"
         onChange={(e) => setQuery(e.target.value)}
       />
     </form>
