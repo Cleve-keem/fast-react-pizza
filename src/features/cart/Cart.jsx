@@ -34,7 +34,7 @@ function Cart() {
       <LinkButton to="/menu">&larr; Back to menu</LinkButton>
 
       <h2>Your cart, %NAME%</h2>
-      <Button to="/order/new">Order pizzas</Button>
+      <Button type="primary" to="/order/new">Order pizzas</Button>
 
       <div>
         <button>Clear cart</button>
