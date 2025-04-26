@@ -1,14 +1,15 @@
+import Button from "../../ui/Button";
 import { formatCurrency } from "../../utils/helpers";
 
 function MenuItem({ pizza }) {
   const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
 
   return (
-    <li className="flex gap-4">
+    <li className="flex gap-4 py-4">
       <img
         src={imageUrl}
         alt={name}
-        className={`h-4 ${soldOut ? "opacity-70 grayscale" : ""}`}
+        className={`w-30 ${soldOut ? "opacity-70 grayscale" : ""}`}
       />
       <div className="flex flex-col grow">
         <p className="font-medium">{name}</p>
@@ -23,8 +24,7 @@ function MenuItem({ pizza }) {
               Sold out
             </p>
           )}
-
-          <Button type="small">Add to cart</Button>
+          {!soldOut && <Button type="small">Add to cart</Button>}
         </div>
       </div>
     </li>
