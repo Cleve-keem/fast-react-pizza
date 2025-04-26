@@ -20,20 +20,3 @@
 //     return { position, address };
 //   }
 
-const initialState = {
-  username: "",
-};
-
-const userSlice = createSlice({
-  name: "",
-  initialState,
-  reducers: {
-    updateName(state, action) {
-      state.username = action.payload;
-    },
-  },
-});
-
-export const {updateName} = userSlice.actions;
-
-export default userSlice.reducers;
