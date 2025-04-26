@@ -36,7 +36,6 @@ function Cart() {
 
       <h2 className="mt-7 font-semibold text-xl">Your cart, %NAME%</h2>
 
-      {/* Render the cart */}
       <ul className="divide-y divide-stone-200 border-b">
         {cart.map((item) => (
           <CartItem item={item} key={item.pizzaId} />
