@@ -47,14 +47,14 @@ function Order() {
             ? `Only ${calcMinutesLeft(estimatedDelivery)} minutes left 😃`
             : "Order should have arrived"}
         </p>
-        <p className="text-xs bg-stone-500">
+        <p className="text-xs text-stone-600">
           (Estimated delivery: {formatDate(estimatedDelivery)})
         </p>
       </div>
 
       <ul className="divide-y divide-stone-200 border-t border-b">
         {cart.map((item) => (
-          <OrderItem item={item} />
+          <OrderItem item={item} key={item.pizzaId} />
         ))}
       </ul>
 
